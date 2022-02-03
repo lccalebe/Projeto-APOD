@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Imagem de Astronomia do Dia - Lucas Calebe</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Imagem de Astronomia do dia</h1>
+    <h3>Veja qual foi a imagem do universo postada no dia que você nasceu, no dia do seu casamento ou em um dia especial pra você.</h3>
+    <div class="form">
+        <label for="date">Escolha a data.</label>
+        <br>
+        <input id="date" type="date">
+        <br>
+        <button onclick="buscar()">Buscar Imagem.</button>
+    </div>
+<br>
+    <div class="result">
+        <div class="imgNasa"><img id="imgNasa"></div>
+        <iframe class="videoNasa" src="" id="videoNasa"></iframe>
+        <h3 id="title"></h3>
+        <p id="imgText"></p><br>
+        <p id="copyright"></p>
+    </div>
+
+    <footer>
+        <p class="copyright">&copy; Copyright 2022 - Lucas Calebe</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="apod.js"></script>
+</body>
+</html>
